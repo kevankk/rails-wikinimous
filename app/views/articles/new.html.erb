@@ -1,7 +1,13 @@
 <%= form_for(@article) do |f| %>
+  <div class="name">
   <%= f.label :name %>
   <%= f.text_field :title %>
+  <text class='title-hidden'>Cannot be blank!</text>
+  </div>
+  <div class="quote">
   <%= f.label :quote %>
   <%= f.text_area :content %>
-  <%= f.submit %>
+  <text class='content-hidden'>Cannot be blank!</text>
+  </div>
+  <%= f.submit class: 'btn', disabled: true %>
 <% end %>

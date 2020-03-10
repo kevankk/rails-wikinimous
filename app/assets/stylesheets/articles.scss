@@ -28,3 +28,8 @@ a {
 a:hover {
   color: #133850;
 }
+
+.title-hidden, .content-hidden {
+  display: none;
+  color: red;
+}
