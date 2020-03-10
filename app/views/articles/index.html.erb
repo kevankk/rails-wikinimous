@@ -1,0 +1,17 @@
+<h1>Quotes from Famous People</h1>
+<h4><%= link_to('Create a new quote!', new_article_path) %></h4>
+
+<% @articles.each do |article| %>
+  <div class="card">
+    <div class="title">
+      <h2><%= link_to(article.title, article_path(article)) %></h2>
+      <div class="icons">
+        <a href=<%= "articles/#{article.id}/edit" %>><i class="fas fa-edit"></i></a>
+        <%= link_to article_path(article), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="fas fa-trash-alt"></i>
+        <% end %>
+      </div>
+    </div>
+  <p><%= article.content %></p>
+</div>
+<% end %>

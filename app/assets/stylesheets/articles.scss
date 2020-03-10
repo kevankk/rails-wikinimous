@@ -1,0 +1,30 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'article_card';
+
+h2, p{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-family: 'Nanum Gothic';
+}
+
+a {
+  text-decoration: none;
+  color: #2772a4;
+}
+
+
+a:hover {
+  color: #133850;
+}
